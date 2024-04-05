@@ -13,4 +13,7 @@ in pkgs.mkShell {
       python-pkgs.requests
     ]))
   ];
+  shellHook = ''
+    export PS1="\n\[\033[1;32m\][python3_bookbotEnv:\w]\$\[\033[0m\]"
+  '';
 }
